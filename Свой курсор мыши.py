@@ -18,7 +18,7 @@ def load_image(name, colorkey=None):
     return image
 
 
-cursor_image = load_image('arrow.png')
+cursor_image = load_image('arrow.png').pygame.transform.scale(10, 10)
 cursor = pygame.sprite.Sprite(all_sprites)
 cursor.image = cursor_image
 cursor.rect = cursor.image.get_rect()
